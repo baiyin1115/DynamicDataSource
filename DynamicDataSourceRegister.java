@@ -153,6 +153,7 @@ public class DynamicDataSourceRegister implements ImportBeanDefinitionRegistrar,
 
     PropertyValues dataSourcePropertyValues = new MutablePropertyValues(values);
 
+    //注意这里，并不是springboot的方式注入属性信息
     dataBinder.bind(dataSourcePropertyValues);
   }
 
